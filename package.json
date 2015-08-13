@@ -1,0 +1,31 @@
+{
+  "name": "travis-yellowlabtools",
+  "version": "0.0.0",
+  "description": "Use Travis-CI to launch performance checkings with Yellow Lab Tools",
+  "scripts": {},
+  "keywords": [
+    "performance",
+    "webperf",
+    "budget",
+    "metrics",
+    "yellowlabtools",
+    "phantomas"
+  ],
+  "author": "Gaël Métais",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmetais/travis-yellowlabtools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gmetais/travis-yellowlabtools/issues"
+  },
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/gmetais/travis-yellowlabtools/blob/master/LICENSE-GPL"
+    }
+  ],
+  "dependencies": {
+    "grunt-yellowlabtools": "~1.0.2"
+  }
+}
