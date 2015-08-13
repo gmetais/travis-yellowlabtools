@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 
             // Global options, for all runs
             options: {
-                key: 'YOUR_YLT_API_KEY', // More details in the README file
+                key: 'API_KEY', // Set this in Travis-CI settings, otherwise everyone will be able to read it on GitHub (more details in README)
                 locally: false // Do not change!
             }
         }
