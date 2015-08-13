@@ -26,6 +26,7 @@
     }
   ],
   "dependencies": {
-    "grunt-yellowlabtools": "~1.0.2"
+    "grunt-yellowlabtools": "~1.0.2",
+    "matchdep": "0.3.0"
   }
 }
