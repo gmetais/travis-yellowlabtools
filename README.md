@@ -5,6 +5,11 @@
 [YellowLabTools](http://yellowlab.tools) is an audit tool that loads a page in PhantomJS and detects front-end **bad practices** and **performance issues**.
 
 
+## First, do you know Yellow Lab Tools ?
+
+Use it with on the web instance ([YellowLabTools](http://yellowlab.tools)) before running this automated version!
+
+
 ## How to
 
 1. Log into GitHub and click the **Fork** button.
@@ -15,12 +20,16 @@
 6. Use [nightli.es](https://nightli.es/) to automatically trigger a GitHub commit once a day.
 
 
+## Result
+
+Travis-CI will send you one email each time a performance issue occurs, and one email the first time the issue is corrected. You will only get spammed on problems! In the email, follow the link to the logs to discover why it failed. The logs will provide urls of the results page, where you will find the classic yellowlab.tools web dashboard, with all the details.
+
 
 ## Set up your API key
 
 YellowLabTools doesn't allow more than 50 runs per day from the same IP address. One run = one url tested. If you put several urls in the Gruntfile, this will be several runs. As Travis-CI probably re-uses the same IP addresses on their virtual machines, you will share these 50 runs with fellow users. That's not much.
 
-Ask for a YellowLabTools key by sending me a quick email (my address is on my GitHub profile). With this key, you'll be able to launch up to 50 runs per day, without sharing :)
+**Ask for a YellowLabTools key by sending me a quick email** (my address is on my [GitHub profile](https://github.com/gmetais)). With this key, you'll be able to launch up to 50 runs per day, without sharing :)
 
 Once you get the API key, open Travis-CI to the last run and click on "Settings". Insert your key in an Environment Variable called `API_KEY`. The next run will automatically use the key.
 
@@ -32,4 +41,10 @@ This is not the basic usage of Travis-CI, which should be used for Continuous In
 
 It's pretty much the same with GitHub.
 
+My plan for the future is to offer this service directly **inside** YellowLabTools.
+
+
+## Install this on your own server
+
+Travis-CI is handy, because it automatically sends emails when a test fails. But if you know a tool that can do that for you, you can absolutely use your own machine to host this project. Launching a test is pretty simple and only needs one command: `grunt yellowlabtools`.
 
