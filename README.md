@@ -5,9 +5,9 @@
 [YellowLabTools](http://yellowlab.tools) is an audit tool that loads a page in PhantomJS and detects front-end **bad practices** and **performance issues**.
 
 
-## First, do you know Yellow Lab Tools ?
+## First, do you know Yellow Lab Tools?
 
-Use it with on the web instance ([YellowLabTools](http://yellowlab.tools)) before running this automated version!
+Use it with on the web instance ([http://yellowlab.tools](http://yellowlab.tools)) before running this automated version!
 
 
 ## How to
