@@ -4,7 +4,7 @@ node_js:
     - "0.12.4"
 before_install:
     - |-
-        sed -i -- 's/YOUR_YLT_API_KEY/'"$API_KEY"'/g' Gruntfile.js
+        sed -i -- 's/API_KEY/'"$API_KEY"'/g' Gruntfile.js
     - "cat Gruntfile.js"
     - "npm install -g grunt-cli"
     - "npm install --no-optional --production"
