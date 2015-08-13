@@ -44,6 +44,7 @@ module.exports = function(grunt) {
 
             // Global options, for all runs
             options: {
+                key: '<replace with your YLT API key>', // More details in the README file
                 locally: false // Do not change!
             }
         }
