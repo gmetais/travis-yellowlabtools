@@ -1,6 +1,6 @@
 # Setup a performance monitoring with Travis-CI and YellowLabTools
 
-[Travis-CI](https://travis-ci.org/) is a Continuous Integration platform that automatically triggers your tests each time you push a commit to GitHub. It pops a virtual machine for your needs and you can do anything you want on it.
+[Travis-CI](https://travis-ci.org/) is a **Continuous Integration platform** that automatically triggers your tests each time you push a commit to GitHub. It pops a virtual machine for your needs, compatible with many languages or tools.
 
 [YellowLabTools](http://yellowlab.tools) is an audit tool that loads a page in PhantomJS and detects front-end **bad practices** and **performance issues**.
 
@@ -13,11 +13,13 @@ Use it with on the web instance ([http://yellowlab.tools](http://yellowlab.tools
 ## How to
 
 1. Log into GitHub and click the **Fork** button.
-2. Edit `Gruntfile.js` according to [this documentation](https://github.com/gmetais/grunt-yellowlabtools#usage-examples). You should be able to edit directly on GitHub's web interface.
-3. Commit changes directly to master (the first of the two commit message fields is required, write anything)
-4. Sign in to [Travis-CI](https://travis-ci.org/) with your GitHub login
-5. Add a new repository and choose "travis-yellowlabtools". This will launch the first test. Adapt if needed, each commit will automatically trigger a new test.
-6. Use [nightli.es](https://nightli.es/) to automatically trigger a GitHub commit once a day.
+2. Sign in to [Travis-CI](https://travis-ci.org/) with your GitHub login
+3. Click the "+" button to a new repository, then find and activate "travis-yellowlabtools". 
+4. Edit `Gruntfile.js` according to [this documentation](https://github.com/gmetais/grunt-yellowlabtools#usage-examples). You should be able to edit directly on GitHub's web interface.
+5. Commit changes directly to master (the text fields are optional)
+6. Go back to Travis' home page and the commit should have triggered the first test. Wait a few seconds and you'll see it appear.
+7. One the test is complete, you will receive an email from Travis. Adapt the test if needed, each commit will automatically trigger a new test.
+8. Use [nightli.es](https://nightli.es/) to automatically trigger a GitHub commit once a day.
 
 
 ## Result
